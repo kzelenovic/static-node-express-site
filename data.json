@@ -29,7 +29,7 @@
         },
         {
             "id": 3,
-            "project_name": "Phrase Guessing App (Object-Oriented Programming)",
+            "project_name": "Phrase Guessing App",
             "description": "Browser-based word guessing game for a random phrase.",
             "technologies": ["JavaScript"],
             "live_link": "https://kzelenovic.github.io/OOP-Game-Show-App/",
