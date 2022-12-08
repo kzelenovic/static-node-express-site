@@ -1,0 +1,49 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Random Quote Generator",
+            "description": "Generates a random famous quote upon refresh or at an interval. Also randomizes background color css with each new quote.",
+            "technologies": ["JavaScript"],
+            "live_link": "https://kzelenovic.github.io/random-quote-generator-JS/",
+            "github_link": "https://github.com/kzelenovic/random-quote-generator-JS",
+            "image_urls": ["/static/img/project_landing.png", "/static/img/project_landscape.png"]
+        },
+        {
+            "id": 1,
+            "project_name": "Data Pagination & Filtering",
+            "description": "Displays a series of pages and a search function to sort through employee data.",
+            "technologies": ["JavaScript"],
+            "live_link": "https://kzelenovic.github.io/data-pagination-filtering/",
+            "github_link": "https://github.com/kzelenovic/data-pagination-filtering",
+            "image_urls": ["/static/img/project_landing.png", "/static/img/project_landscape.png"]
+        },
+        {
+            "id": 2,
+            "project_name": "Interactive Form",
+            "description": "Interactive sign-up form with basic validation.",
+            "technologies": ["JavaScript"],
+            "live_link": "https://kzelenovic.github.io/interactive-form-js/",
+            "github_link": "https://github.com/kzelenovic/interactive-form-js",
+            "image_urls": ["/static/img/project_landing.png", "/static/img/project_landscape.png"]
+        },
+        {
+            "id": 3,
+            "project_name": "Phrase Guessing App (Object-Oriented Programming)",
+            "description": "Browser-based word guessing game for a random phrase.",
+            "technologies": ["JavaScript"],
+            "live_link": "https://kzelenovic.github.io/OOP-Game-Show-App/",
+            "github_link": "https://github.com/kzelenovic/OOP-Game-Show-App",
+            "image_urls": ["/static/img/project_landing.png", "/static/img/project_landscape.png"]
+        },
+        {
+            "id": 4,
+            "project_name": "Employee Directory (Public API)",
+            "description": "Uses Random User Generator API to create a prototype for an employee directory.",
+            "technologies": ["JavaScript"],
+            "live_link": "https://kzelenovic.github.io/public-api-employee-directory/",
+            "github_link": "https://github.com/kzelenovic/public-api-employee-directory",
+            "image_urls": ["/static/img/project_landing.png", "/static/img/project_landscape.png"]
+        }
+    ]
+}
