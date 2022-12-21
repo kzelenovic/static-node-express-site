@@ -14,7 +14,14 @@ router.get('/project/:id', (req, res) => {
     const projectId = req.params.id;
     const project = projects.find((project) => project.id === +projectId);
 
-    res.render('project', { project });
-})
+    if(project) {
+        res.render('project', { project });
+    } else {
+       // res.sendStatus(404);
+        /* const err = new Error('Not found.');
+        err.status = 404;
+        next(err); */
+    }
+});
 
 module.exports = router;

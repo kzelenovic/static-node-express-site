@@ -10,6 +10,22 @@ app.use('/static', express.static('public'));
 
 app.use(router);
 
+// 404 function will be here
+app.use((req, res, next) => {
+    const err = new Error('Not found.');
+    err.status = 404;
+    console.log(err.status);
+    console.log(err);
+    next(err);
+});
+
+// general error handler will be here.
+app.use((err, req, res) => {
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('error');
+});
+
 app.listen(3000, () => {
     console.log('The app is running on localhost:3000.')
 });
