@@ -14,15 +14,15 @@ app.use(router);
 app.use((req, res, next) => {
     const err = new Error('Not found.');
     err.status = 404;
-    console.log(err.status);
-    console.log(err);
     next(err);
 });
 
 // general error handler will be here.
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
     res.locals.error = err;
-    res.status(err.status);
+    res.locals.message = err.message;
+    
+    res.status(err.status || 500);
     res.render('error');
 });
 

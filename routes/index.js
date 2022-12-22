@@ -10,17 +10,16 @@ router.get('/about', (req, res) => {
     res.render('about');
 });
 
-router.get('/project/:id', (req, res) => {
+router.get('/project/:id', (req, res, next) => {
     const projectId = req.params.id;
     const project = projects.find((project) => project.id === +projectId);
 
-    if(project) {
+    if (project) {
         res.render('project', { project });
     } else {
-       // res.sendStatus(404);
-        /* const err = new Error('Not found.');
+        const err = new Error('Not found.');
         err.status = 404;
-        next(err); */
+        next(err);
     }
 });
 
