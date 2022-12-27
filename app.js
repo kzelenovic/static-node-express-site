@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const { projects } = require('./data.json');
 
 const router = require('./routes');
 
@@ -23,7 +22,12 @@ app.use((err, req, res, next) => {
     res.locals.message = err.message;
     
     res.status(err.status || 500);
-    res.render('error');
+
+    if (err.status === 404){
+        res.render('page-not-found');
+    } else {
+        res.render('error');
+    };
 });
 
 app.listen(3000, () => {
